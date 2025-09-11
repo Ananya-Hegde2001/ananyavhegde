@@ -1,6 +1,3 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/ananyavhegde" width="90%">
-</div>
 
 # Features
 
