@@ -20,17 +20,17 @@ export const metadata: Metadata = {
   },
   description: DATA.description,
   openGraph: {
-    title: "Rajeev Ranjan Singh – Full-Stack Developer",
+    title: "Ananya V Hegde – Full-Stack Developer",
     description:
-      "Portfolio of Rajeev – React/Next.js developer with experience in scalable web/mobile apps.",
-    url: "https://rajeevdev.vercel.app",
-    siteName: "Rajeev's Portfolio",
+      "Portfolio of Ananya – React/Next.js developer with experience in scalable web/mobile apps.",
+    url: "https://ananyavhegde.vercel.app",
+    siteName: "Ananya's Portfolio",
     images: [
       {
         url: "/preview.png", // ✅ must be relative or full absolute URL
         width: 1200,
         height: 630,
-        alt: "Preview of Rajeev's Portfolio",
+        alt: "Preview of Ananya's Portfolio",
       },
     ],
     type: "website",

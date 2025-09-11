@@ -58,7 +58,7 @@ avatarUrl: "/ananya.png",
       },
       email: {
         name: "Send Email",
-        url: "rrsrrsrajeev@gmail.com",
+        url: "ananyavhegde2001@gmail.com",
         icon: Icons.email,
         navbar: false,
       },
