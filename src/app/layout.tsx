@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ParticlesCursor } from "@/components/particles-cursor";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
@@ -72,8 +73,9 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
+  <ThemeProvider>
           <TooltipProvider delayDuration={0}>
+            <ParticlesCursor />
             {children}
             <Navbar />
           </TooltipProvider>

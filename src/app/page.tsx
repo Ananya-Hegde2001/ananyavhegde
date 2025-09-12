@@ -7,6 +7,7 @@ import SkillsSection from "@/components/SkillsSection";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
+import { JourneySection } from "@/components/JourneySection";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -184,6 +185,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <JourneySection />
     </main>
   );
 }

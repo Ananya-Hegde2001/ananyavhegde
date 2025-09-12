@@ -8,7 +8,7 @@ export const DATA = {
   "url": "https://github.com/Ananya-Hegde2001",
   "location": "Bengaluru, India",
   "locationLink": "https://www.google.com/maps/place/bengaluru",
-  "description": "Front-End Engineer | React, Next.js & MongoDB | Amazon Web Services | Expanding into Full-Stack with NestJS",
+  "description": "Front-End Engineer | MERN Stack | Expanding into Full-Stack with NestJS",
   "summary": "I have worked on web and mobile application development, cloud deployment, and data-driven projects through internships and academic work. My experience includes building applications with React, Node.js, MongoDB, and Python, along with working on projects such as a job portal, real-time crowd density estimator, and driver drowsiness detection system. I enjoy learning new technologies and applying them to create practical solutions.",
 avatarUrl: "/ananya.png",
    skills: [

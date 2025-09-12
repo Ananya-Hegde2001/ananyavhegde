@@ -75,6 +75,14 @@
       @apply bg-background text-foreground;
     }
 
+    /* Hide default cursor for custom particles cursor */
+    body { cursor: none; }
+    a, button, input, textarea, select { cursor: none; }
+    /* Allow opting out if reduced motion is preferred */
+    @media (prefers-reduced-motion: reduce) {
+      body, a, button, input, textarea, select { cursor: auto; }
+    }
+
       /* Custom text selection (light mode) */
       ::selection {
         background: #fde047; /* Tailwind yellow-300 */
