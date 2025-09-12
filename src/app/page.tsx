@@ -25,14 +25,15 @@ export default function Page() {
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
                 />
                 {/* Online status indicator */}
-                <span className="relative inline-flex items-center justify-center h-4 w-4 ml-3">
-                  {/* Pulsing ring (same size as dot, centered) */}
-                  <span className="absolute h-5 w-5 rounded-full bg-green-400 opacity-75 animate-ping" />
-                  {/* Core dot */}
+                <span className="relative inline-flex items-center justify-center ml-2 sm:ml-3 self-center flex-shrink-0" aria-hidden="false">
+                  {/* Pulsing ring - slightly smaller on very small screens */}
+                  <span className="absolute rounded-full bg-green-400 opacity-75 animate-ping h-4 w-4 sm:h-5 sm:w-5" />
+                  {/* Core dot - scales with screen size */}
                   <span
-                    className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_6px_3px_rgba(34,197,94,0.9)]"
+                    className="relative rounded-full bg-green-500 shadow-[0_0_6px_3px_rgba(34,197,94,0.9)] h-2 w-2 sm:h-2.5 sm:w-2.5"
                     title="Online"
                   />
+                  <span className="sr-only">Online</span>
                 </span>
               </div>
               <BlurFadeText
