@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  icons: {
+    icon: "/round_ananya.png",
+    shortcut: "/round_ananya.png",
+    apple: "/round_ananya.png",
+  },
   openGraph: {
     title: "Ananya V Hegde – Full-Stack Developer",
     description:

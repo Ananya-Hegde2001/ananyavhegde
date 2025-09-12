@@ -159,9 +159,9 @@ export default function Page() {
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">Contact</div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get in Touch</h2>
-              <div className="mx-auto max-w-[600px] text-muted-foreground space-y-4 text-base md:text-xl">
-                <p>
-                  📞 Call: <a href="tel:+917795116340" className="text-blue-500 hover:underline">+91 77951 16340</a>
+              <div className="mx-auto max-w-[650px] text-muted-foreground space-y-4 text-base md:text-xl">
+                <p className="text-foreground/90 leading-relaxed">
+                  I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
                 </p>
                 <p>
                   💬 WhatsApp: <a href="https://wa.me/917795116340" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Message on WhatsApp</a>
