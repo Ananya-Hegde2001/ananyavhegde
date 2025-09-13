@@ -16,28 +16,30 @@ export default function Navbar() {
     <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14">
       <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
   <Dock className="z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-1 backdrop-blur-xl bg-white/10 dark:bg-[#18181b]/55 border border-white/15 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.5),0_0_0_1px_rgba(255,255,255,0.06)] transform-gpu">
-  {DATA.navbar.map((item) => (
-          <DockIcon key={item.href}>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Link
-                  href={item.href}
-      target="_blank"
-      rel="noopener noreferrer"
-                  className={cn(
-                    buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-12 group"
-                  )}
-                >
-                  <item.icon className="size-4 text-muted-foreground group-hover:text-[#8e51ff] group-hover:scale-110" />
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>{item.label}</p>
-              </TooltipContent>
-            </Tooltip>
-          </DockIcon>
-        ))}
+        {DATA.navbar.map((item) => {
+          const isInternal = item.href.startsWith('/');
+          return (
+            <DockIcon key={item.href}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link
+                    href={item.href}
+                    {...(!isInternal && { target: "_blank", rel: "noopener noreferrer" })}
+                    className={cn(
+                      buttonVariants({ variant: "ghost", size: "icon" }),
+                      "size-12 group"
+                    )}
+                  >
+                    <item.icon className="size-4 text-muted-foreground group-hover:text-[#8e51ff] group-hover:scale-110" />
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{item.label}</p>
+                </TooltipContent>
+              </Tooltip>
+            </DockIcon>
+          );
+        })}
         <Separator orientation="vertical" className="h-full" />
   {Object.entries(DATA.contact.social)
           .filter(([_, social]) => social.navbar)
